@@ -1,6 +1,7 @@
-Repositorio grupo 43
+# Repositorio Grupo 43
 
-Integrantes:
-Trinidad Carrasco
-Francisco Ruiz
-Vicente Vega
+## Integrantes:
+
+* Trinidad Carrasco
+* Francisco Ruiz
+* Vicente Vega
