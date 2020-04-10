@@ -1,0 +1,25 @@
+AllCops:
+  Exclude:
+    - '.git/**/*'
+    - '.keep/**/*'
+    - '.md/**/*'
+    - '.json/**/*'
+    - 'tmp/**/*'
+    - 'vendor/**/*'
+    - 'app/assets/**/*'
+    - 'config/locales/**/*'
+    - 'lib/**/*'
+    - 'log/**/*'
+    - 'public/**/*'
+    - '.ruby-version'
+    - 'config.ru'
+
+Layout/Tab:
+  IndentationWidth: 4
+
+Layout/LineLength:
+  Max: 90
+
+Metrics/ModuleLength:
+  CountComments: true
+  Max: 400
