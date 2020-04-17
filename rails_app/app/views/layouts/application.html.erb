@@ -10,6 +10,20 @@
   </head>
 
   <body>
+    <div>
+      <% if signed_in? %>
+        <%= link_to "Salir", destroy_match_user_session_path, method: :delete %>
+      <% else %>
+        <%= link_to "Registrarse a Match", new_match_user_registration_path%>
+        <%= link_to "Ingresar a Match", new_match_user_session_path%>
+      <% end %>
+      <% if signed_in? %>
+        <%= link_to "Salir", destroy_local_user_session_path, method: :delete %>
+      <% else %>
+        <%= link_to "Registrarse a Local", new_local_user_registration_path%>
+        <%= link_to "Ingresar a Local", new_local_user_session_path%>
+      <% end %>
+    </div>
     <%= yield %>
   </body>
 </html>
