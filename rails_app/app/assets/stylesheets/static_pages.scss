@@ -8,7 +8,7 @@
 
 body {
   padding-top: 70px;
-  background-color: #ffe7ad;
+  /*background-color: #ffe7ad;*/
 }
 
 section {
@@ -55,10 +55,11 @@ p {
 }
 
 /* header */
+/*
 .navbar-inverse {
   background-color: #ffd05c;
 }
-
+*/
 
 
 #logo {
@@ -109,3 +110,26 @@ footer ul li {
 }
 
 /* footer */
+.homebody{
+  background-color: #ffe7ad;
+}
+
+.home {
+  background-color: #ffd05c;
+}
+
+.matchbody{
+  background-color: #ffc6c3;
+}
+
+.match {
+  background-color: #ff6961;
+}
+
+.localbody{
+  background-color: #cedde2;
+}
+
+.local {
+  background-color: #8eafbc;
+}
