@@ -2,6 +2,14 @@
 
 class Matchusers::SessionsController < Devise::SessionsController
   before_action :configure_sign_in_params, only: [:create]
+  before_action :set_logo, only: [:new]
+
+  def set_logo
+    @logo = {
+      :name => "Grupo43App",
+      :link => root_path
+    }
+  end
 
   #GET /resource/sign_in
   def new
