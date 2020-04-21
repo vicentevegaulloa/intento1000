@@ -1,16 +1,18 @@
 # frozen_string_literal: true
 
 class Localusers::SessionsController < Devise::SessionsController
-   before_action :configure_sign_in_params, only: [:create]
-
+  before_action :set_variables
   # GET /resource/sign_in
-  def new
-    super
+  def set_variables
     @logo = {
       :name => "Grupo43App",
       :link => root_path
     }
     @style = "home"
+  end
+
+  def new
+    super
   end
 
   # POST /resource/sign_in
