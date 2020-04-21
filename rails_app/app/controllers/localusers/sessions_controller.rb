@@ -10,6 +10,7 @@ class Localusers::SessionsController < Devise::SessionsController
       :name => "Grupo43App",
       :link => root_path
     }
+    @style = "home"
   end
 
   # POST /resource/sign_in

@@ -9,6 +9,7 @@ class Matchusers::SessionsController < Devise::SessionsController
       :name => "Grupo43App",
       :link => root_path
     }
+    @style = "home"
   end
 
   #GET /resource/sign_in
