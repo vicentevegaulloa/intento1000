@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Localusers::SessionsController < Devise::SessionsController
-  before_action :set_variables
+   prepend_before_action :set_variables, only: [:new]
   # GET /resource/sign_in
   def set_variables
     @logo = {
